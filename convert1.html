@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page 1</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			overflow: hidden;
+		}
+		.btn {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			border-radius: 5px;
+			text-decoration: none;
+			font-weight: bold;
+			transition: all 0.3s ease;
+		}
+		.btn:hover {
+			background-color: #0062cc;
+		}
+		.page {
+			width: 100vw;
+			height: 100vh;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: transform 0.5s ease;
+		}
+		.page-1 {
+			background-color: #f8f9fa;
+			transform: translateX(0%);
+		}
+		.page-2 {
+			background-color: #007bff;
+			transform: translateX(100%);
+		}
+		.page-2.active {
+			transform: translateX(0%);
+		}
+		.back-btn {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			border-radius: 5px;
+			text-decoration: none;
+			font-weight: bold;
+			transition: all 0.3s ease;
+		}
+		.back-btn:hover {
+			background-color: #0062cc;
+		}
+	</style>
+</head>
+<body>
+	<div class="page page-1">
+		<div class="container">
+			<h1>Welcome to Page 1</h1>
+			<a href="#" class="btn" onclick="slidePage()">Go to Page 2</a>
+		</div>
+	</div>
+	<div class="page page-2">
+		<div class="container">
+			<h1>Welcome to Page 2</h1>
+			<a href="#" class="btn" onclick="slidePage()">Go back to Page 1</a>
+			<a href="#" class="back-btn" onclick="slidePage()">Back</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function slidePage() {
+			document.querySelector('.page-1').classList.toggle('active');
+			document.querySelector('.page-2').classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
