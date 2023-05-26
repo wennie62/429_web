@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>随机数&抽奖游戏</title>
+	<link rel="stylesheet" type="text/css" href="css/page1.css">
+	<link rel="stylesheet" type="text/css" href="css/page2.css">
+	<link rel="stylesheet" type="text/css" href="css/page3.css">
+
+</head>
+<body>
+	<div class="page page-1">
+		<div class="title">欢迎来到抽奖游戏</div>
+		<div class="mainbox">
+			<div class="random">
+				<a href="#" class="btn k1" onclick="slidePage()">随机数生成器</a>
+			</div>
+			<div class="raffle">
+				<a href="page3.html" class="btn-3 k2">抽奖助手</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="page page-2">
+		<div class="random-num">
+			<div class="random-create">
+			    <div class="option">
+				    <input class="min" placeholder="Min">
+				    <input class="max" placeholder="Max">
+			    </div>
+			    <div class="repeat1">有无重复</div>
+			    <div class="make">生成</div>
+		    </div>
+            <div class="digit"></div>
+		</div>
+				<a href="#" class="back-btn" onclick="slidePage()">Back</a>
+	</div>
+
+
+
+
+	<script type="text/javascript">
+		function slidePage() {
+			document.querySelector('.page-1').classList.toggle('active');
+			document.querySelector('.page-2').classList.toggle('active');
+		}
+	</script>
+</body>
+</html>

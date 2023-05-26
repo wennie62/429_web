@@ -1,0 +1,112 @@
+.page3-main{
+		width: 1400px;
+		height: 700px;
+		background-color: lightblue;
+		margin: 100px auto;
+		display: grid;
+		grid-template-columns: 550px 450px;
+}
+.draw{
+		width: 600px;
+		height: 550px;
+		margin: 50px 0 0 110px;
+		background-color:#ff7d5c;
+}
+.outcome{
+		width: 600px;
+		height: 550px;
+		margin: 50px 0 0 190px;
+		background-color:#ff7d5c;
+}
+.draw-pond{
+		width: 370px;
+		height: 230px;
+		margin: 0px 0 0 0px;
+		background-color: #00bcac;
+		font-size: 65px;
+		padding: 90px 0 0 230px;
+}
+.new{
+	width: 370px;
+	height: 46px;
+	font-size: 25px;
+	margin: 30px 0 0 10px;
+}
+.attribute{
+	display: grid;
+	grid-template-columns: 390px 40px 40px;
+}
+.add{
+	width: 35px;
+	height: 35px;
+	margin: 36px 0 0 5px;
+	font-size: 30px;
+}
+.lower{
+	width: 35px;
+	height: 35px;
+	margin: 36px 0 0 10px;
+	font-size: 28px;
+}
+.count{
+	width: 250px;
+	height: 35px;
+	margin: 30px 0 0 10px;
+	font-size: 26px;
+}
+.repeat{
+	width: 150px;
+	height: 37px;
+	font-size: 24px;
+	margin: 30px 0 0 10px;
+	background-color: white;
+	padding: 2px 0 0 100px; 
+	font-weight: bold;
+}
+.set{
+	display: grid;
+	grid-template-columns: 270px 270px 40px; 
+}
+.bt{
+	width: 100px;
+	height: 40px;
+	margin: 100px 0 0 -70px;
+	font-size: 25px;
+	transition: transform 0.5s ease;
+	text-decoration: none;
+	padding: 5px;
+	border: 1px solid #47c8ea;
+	border-radius:5px ;
+	background-color: #47c8ea;
+}
+.bt:hover {
+            transform: scale(1.2); /* 放大效果 */
+            color: blue; /* 文字颜色变为蓝色 */
+}
+.pick{
+	width: 32px;
+	height: 32px;
+	margin: 33px 0 0 0px;
+	background-color: white;
+}
+.extracted{
+	text-align: center;
+	width: 400px;
+	height:230px;
+	background-color: #00bcac;
+	font-size: 65px;
+	padding: 90px 100px 0 100px;
+}
+.eliminate{
+	width: 150px;
+	height: 60px;
+	margin: 50px 120px  0 103px;
+	font-size: 25px;
+	font-weight: bold;
+}
+.extract{
+	width: 150px;
+	height: 60px;
+	font-size: 25px;
+	font-weight: bold;
+}
