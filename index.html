@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>随机数&抽奖游戏</title>
+	<link rel="stylesheet" type="text/css" href="css/page1.css" media="screen and (min-width:980px)">
+	<link rel="stylesheet" type="text/css" href="css/page1_m.css" media="screen and (max-width:980px) and (min-width:320px)">
+	<link rel="stylesheet" type="text/css" href="css/page2.css" media="screen and (min-width:980px)">
+	<link rel="stylesheet" type="text/css" href="css/page2_m.css" media="screen and (max-width:980px) and (min-width:320px)">
+	<link rel="stylesheet" type="text/css" href="css/page3.css" media="screen and (min-width:980px)">
+	<link rel="stylesheet" type="text/css" href="css/page3_m.css" media="screen and (max-width:980px) and (min-width:320px)">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+	<div class="page page-1">
+		<div class="title">欢迎来到抽奖游戏</div>
+		<div class="mainbox">
+			<div class="random">
+				<li>随机数生成器：如果你想选择一个数字而不知道选什么，用随机数生成器帮你生成一个吧！</li>
+				<a href="page3.html" class="btn-3 k2 animate__animated animate__flash">随机数生成器</a>
+				<img src="img/page1_img2.jpg" />
+			</div>
+			<div class="raffle">
+				<li>抽奖助手：任何形式的抽奖都可用抽奖助手进行！</li>
+				<a href="#" class="btn k1" onclick="slidePage()">抽奖助手</a>
+				<img src="img/page1_img3.jpg" />
+			</div>
+		</div>
+		<img src="img/page1_bac1.png" />
+	</div>
+
+	<div class="page page-2">
+		<!-- 抽奖池 -->
+		<div class="draw">
+			<!-- 奖池 -->
+			<div class="draw-pond">
+				<button id="d-item" class="item">iPhone X</button>
+				<div class="jc">奖池</div>
+				<div class="explain">待抽取的奖品将会呈现在这里</div>
+			</div>
+			<!-- 设置抽奖属性 -->
+			<div class="attribute">
+				<input class="new" placeholder="New">
+				<button class="add">+</button>
+				<button class="lower">-</button>
+			</div>
+			<div class="set">
+				<input class="count" placeholder="数目">
+                <div class="repbox">
+                    <div id="rep" class="pick" onclick="pickUp()"></div>
+                    <div class="repeat">重复</div>
+                </div>
+			</div>
+			<!-- <button class="bt">退出</button> -->
+
+			<a href="#" class="back-btn" onclick="slidePage()">Back</a>
+		</div>
+		<!-- 抽出结果 -->
+		<div class="outcome">
+			<!-- 已抽出 -->
+			<div id="resBox"class="extracted">
+				<div class="jc1">结果</div>
+				<div class="bz1">已抽出的奖品将会呈现在这里</div>
+			</div>
+            <div class="butBox">
+                <button class="eliminate">清除</button>
+                <button class="extract">抽取</button>
+            </div>
+		</div>
+	</div>
+
+
+
+
+	<script type="text/javascript">
+		function slidePage() {
+			document.querySelector('.page-1').classList.toggle('active');
+			document.querySelector('.page-2').classList.toggle('active');
+		}
+		function pickUp(){
+			document.querySelector('.pick').classList.toggle('active')
+		}
+	</script>
+	<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+	<script type="text/javascript" src="js/randomNum.js"></script>
+	<script type="text/javascript" src="js/gacha.js"></script>
+</body>
+</html>

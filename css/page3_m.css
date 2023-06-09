@@ -1,0 +1,170 @@
+body {
+	background-color: #e8e5c0;
+}
+
+.page3-main {
+	background-image: url(img/page3_bac1.webp);
+	margin:auto;
+}
+
+.random-num {
+	display: flex;
+	align-items:center;
+	flex-direction:column;
+}
+
+.random-create {
+	width: 70%;
+	height: 30rem;
+	background-color: lightblue;
+	margin: 2rem auto;
+}
+
+.digit {
+	width: 70%;
+	height: 30rem;
+	background-color: lightblue;
+	margin: 2rem auto;
+}
+
+.option {
+	font-size: 50px;
+	font-weight: bold;
+	width: 90%;
+	height: 15rem;
+	background-color: #AAFFEE;
+	/*		padding: 20px 20px 0 20px;*/
+	border-radius: 50%;
+	align-items: center;
+	flex-direction: column;
+	display: flex;
+}
+
+.min {
+	width: 70%;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.max {
+	width: 70%;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+input {
+	width: 28rem;
+}
+
+.bott {
+	width: 90%;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+	display: flex;
+}
+
+.amount {
+	margin: 6rem 0 0 0;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#Amount {
+	width: 80%;
+	height: 2.5rem;
+}
+
+.repeat2 {
+	display: flex;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	align-items: center;
+	flex-direction: row;
+	display: flex;
+}
+
+.normal {
+	width: 2rem;
+	height: 2rem;
+}
+
+.n_active {
+	width: 2rem;
+	height: 2rem;
+	background-color: black;
+}
+
+.cf {
+	font-size: 25px;
+	display: flex;
+	margin: 0 0 0 1rem;
+}
+
+.buttonbox {
+	display: flex;
+}
+
+.clear {
+	font-size: 35px;
+	font-weight: bold;
+	width: 30%;
+	margin-top: 2rem;
+	margin-bottom: 5rem;
+	border-radius: 1rem;
+}
+
+.make {
+	font-size: 35px;
+	font-weight: bold;
+	width: 40%;
+	height: 4rem;
+	margin-top: 2rem;
+	margin-bottom: 5rem;
+	background-color: #AAFFEE;
+	text-align: center;
+	border-radius: 1rem;
+}
+
+.sz {
+	width: 93%;
+	height: 18rem;
+	margin: 0px;
+	padding: 20px;
+	overflow: scroll;
+}
+
+.sz1 {
+	width: 8rem;
+	height: 3rem;
+	background-color: white;
+	margin: 0 0.5rem 0 1rem;
+	border-radius: 2rem;
+	text-align: center;
+	font-size: 20px;
+}
+
+.bz {
+	font-size: 20px;
+	text-align: right;
+	margin: 14rem 3rem 0 0;
+	color: yellow;
+	font-style: italic;
+}
+
+.bt {
+	text-decoration: none;
+	font-size: 22px;
+	background-color: #AAFFEE;
+	color: black;
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+
+.rpn {
+	font-size: 30px;
+	font-weight: bold;
+	margin:1rem;
+}

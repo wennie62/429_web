@@ -1,0 +1,217 @@
+.page-2 {
+	width: 100%;
+	height: 100%;
+	padding-top: 15rem;
+	background-color: lightblue;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	display: flex;
+}
+
+.draw {
+	width: 37.5rem;
+	height: 34rem;
+	margin:40px;
+	background-color: #f48386;
+}
+
+.outcome {
+	width: 37.5rem;
+	height: 34rem;
+	margin: 40px;
+	background-color: #f48386;
+}
+
+.draw-pond {
+	width: 35.5rem;
+	height: 18rem;
+	background-color: #8db7f1;
+	padding: 1rem;
+	overflow: scroll;
+}
+
+.explain {
+	font-size: 20px;
+	margin: 5rem 0 0 17rem;
+	color: yellow;
+	font-style: italic;
+}
+
+.jc {
+	font-size: 65px;
+	margin-top: 2rem;
+	text-align: center;
+	/*	padding: 20px 0 0 230px;*/
+}
+
+.item {
+	width: 90%;
+	height: 3rem;
+	background-color: #f5f6ff;
+	margin: 0 0 0 1rem;
+	display: flex;
+	border-radius: 2rem;
+	text-align: center;
+	font-size: 18px;
+	word-wrap: break-word;
+	word-break: break-all;
+	overflow: hidden;
+	border: 5px #ccd1fb dotted;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: row;
+	display: flex;
+}
+
+.new {
+	width: 26rem;
+	height: 2.4rem;
+	font-size: 25px;
+	margin: 2rem 0 0 0.5rem;
+}
+
+.attribute {
+	display: grid;
+	grid-template-columns: 25rem 3rem 3rem;
+	margin-top: 1rem;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: row;
+	display: flex;
+}
+
+.add {
+	width: 2.5rem;
+	height: 2.5rem;
+	margin: 2rem 0 0 0;
+	font-size: 30px;
+}
+
+.lower {
+	width: 2.5rem;
+	height: 2.5rem;
+	margin: 2rem 0 0 0;
+	font-size: 28px;
+}
+
+.count {
+	width: 16rem;
+	height: 2.4rem;
+	margin: 2rem 0 0 0.5rem;
+	font-size: 26px;
+}
+
+.repbox {
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	display: flex;
+}
+
+.repeat {
+	width: 50px;
+	height: 37px;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 30px 0 0 10px;
+	padding: 5px 0 0 0px;
+}
+
+.set {
+	
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: row;
+	display: flex;
+}
+
+.random {
+	text-align: center;
+}
+
+.bt {
+	width: 100px;
+	height: 40px;
+	margin: 100px 0 0 -70px;
+	font-size: 25px;
+	transition: transform 0.5s ease;
+	text-decoration: none;
+	padding: 5px;
+	border: 1px solid #47c8ea;
+	border-radius: 5px;
+	background-color: #47c8ea;
+}
+
+.bt:hover {
+		transform: scale(1.2); /* 放大效果 */
+		color: blue; /* 文字颜色变为蓝色 */
+}
+
+.pick {
+	width: 1.8rem;
+	height: 1.8rem;
+	margin: 2rem 0.5rem 0 0;
+	position: relative;
+	border-radius: 0.3rem;
+	border: 0.25rem solid #fff;
+	padding: 0;
+	cursor: pointer;
+	transition: background-color 0.25s;
+	backgroun: url(img/uncheck.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.pick.active {
+		background: url(img/check.png) no-repeat;
+		background-size: 100% 100%;
+}
+
+.extracted {
+	width: 35.5rem;
+	height: 18rem;
+	background-color: #8db7f1;
+	padding: 1rem;
+	overflow: scroll;
+}
+
+.jc1 {
+	font-size: 65px;
+	margin-top: 5rem;
+	text-align: center;
+}
+
+.bz1 {
+	font-size: 20px;
+	margin: 5rem 0 0 17rem;
+	color: yellow;
+	font-style: italic;
+}
+
+.eliminate {
+	width: 10rem;
+	height: 4rem;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.extract {
+	width: 10rem;
+	height: 4rem;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.rp {
+	font-size: 30px;
+	font-weight: bold;
+	margin:1rem;
+}
+
+.butBox {
+	margin-top: 5rem;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: row;
+	display: flex;
+}
